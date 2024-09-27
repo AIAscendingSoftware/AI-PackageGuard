@@ -56,7 +56,7 @@ class YOLOModel:
 # Example usage
 if __name__ == '__main__':
     # Create an instance of the YOLOModel class with the best model
-    yolo_model = YOLOModel(r'D:\AI Projects\building action recognition model\runs\detect\yolov8_finetuned\weights\best.pt')
+    yolo_model = YOLOModel(r'D:\AI Projects\building action recognition model\fine-tuned model(holding parcel)\weights\best.pt')
     
     # Run inference on a video and show annotated video in real-time
-    yolo_model.run_inference_on_video(r"C:\Users\ens\Downloads\videoplayback (1).mp4")
+    yolo_model.run_inference_on_video(r"D:\AI Projects\building action recognition model\AI-PackageGuard\data\raw_videos\2.mp4")

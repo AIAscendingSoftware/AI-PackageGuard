@@ -136,4 +136,8 @@ we are going to use virtual environment at "E:\AI Ascending Software\AS AI Proje
 
 
 
+####To download best.pt(fine-tuned model)
+fine-tuned model - https://drive.google.com/file/d/1wbU2nsqlB6LfqDf4XqmktjJG349iFKc6/view?usp=drive_link
 
+####To download last.pt(the last epoch model)
+last.pt model - https://drive.google.com/file/d/10MZ62NZVAwuGl6xP9GtGetDFLFXsBDpm/view?usp=drive_link
