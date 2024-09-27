@@ -81,6 +81,6 @@ class DatasetValidator:
 
 if __name__ == "__main__":
     # Example usage
-    dataset_path = r'E:\AI Ascending Software\AS AI Projects\building action recognition model\AI-PackageGuard\FineTuneYOLOToDetectPeopelWithParcels\data\custom_dataset'
+    dataset_path = r'D:\AI Projects\building action recognition model\AI-PackageGuard\FineTuneYOLOToDetectPeopelWithParcels\data\custom_dataset'
     validator = DatasetValidator(dataset_path)
     validator.validate()

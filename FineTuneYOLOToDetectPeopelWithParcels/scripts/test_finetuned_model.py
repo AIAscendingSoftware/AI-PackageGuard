@@ -1,37 +1,4 @@
-# from ultralytics import YOLO
 
-# class YOLOModel:
-#     def __init__(self, model_path):
-#         """
-#         Initialize the YOLO model with the given model path.
-        
-#         :param model_path: Path to the pre-trained model file (e.g., 'best.pt').
-#         """
-#         self.model = YOLO(model_path)  # Load the model
-    
-#     def run_inference(self, source, show=False):
-#         """
-#         Run inference on a video and display the results in real-time.
-        
-#         :param source: Path to the video for inference.
-#         :param show: If True, display the results in real-time.
-#         :return: The results from the inference.
-#         """
-#         # Run the model's prediction
-#         results = self.model.predict(source=source, stream=True)  # Stream results for real-time display
-        
-#         # Display the results in real-time
-#         if show:
-#             for result in results:
-#                 result.show()  # Show each frame's detection results
-
-# # Example usage
-# if __name__ == '__main__':
-#     # Create an instance of the YOLOModel class with the best model
-#     yolo_model = YOLOModel(r'D:/AI Projects/fineTuneYolo8xModel/yolo_training/yolov8_finetuned/weights/best.pt')
-    
-#     # Run inference on a video and show results in real-time
-#     result = yolo_model.run_inference(r'D:/AI Projects/AI facial analysis/videos for AI facial anlysis/rec.mp4', show=True)
 import cv2
 from ultralytics import YOLO
 
@@ -89,7 +56,7 @@ class YOLOModel:
 # Example usage
 if __name__ == '__main__':
     # Create an instance of the YOLOModel class with the best model
-    yolo_model = YOLOModel(r'D:/AI Projects/fineTuneYolo8xModel/yolo_training/yolov8_finetuned/weights/best.pt')
+    yolo_model = YOLOModel(r'D:\AI Projects\building action recognition model\runs\detect\yolov8_finetuned\weights\best.pt')
     
     # Run inference on a video and show annotated video in real-time
-    yolo_model.run_inference_on_video(r"D:\AI Projects\fineTuneYolo8xModel\throwingParcelsVideos\WhatsApp Video 2024-08-30 at 21.13.02.mp4")
+    yolo_model.run_inference_on_video(r"C:\Users\ens\Downloads\videoplayback (1).mp4")
