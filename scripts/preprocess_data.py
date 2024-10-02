@@ -1,1 +1,0 @@
-# Preprocessing: resizing, normalization, etc.
