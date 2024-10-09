@@ -2,10 +2,10 @@ import cv2
 from ultralytics import YOLO
 
 # Load the fine-tuned YOLO model
-model = YOLO('runs/detect/train/weights/best.pt')  # Path to your fine-tuned model
+model = YOLO(r'E:\AI Ascending Software\AS AI Projects\building action recognition model\detecting holding parcels model\weights\best.pt')  # Path to your fine-tuned model
 
 # Open video feed
-video_path = r"D:\downloads from chrome\WhatsApp Video 2024-08-30 at 21.13.04 (3).mp4"
+video_path = r"E:\AI Ascending Software\AS AI Projects\yolo\videos\WhatsApp Video 2024-08-30 at 21.13.02 (2).mp4"
 cap = cv2.VideoCapture(video_path)
 
 while cap.isOpened():
@@ -27,3 +27,5 @@ while cap.isOpened():
 
 cap.release()
 cv2.destroyAllWindows()
+
+
