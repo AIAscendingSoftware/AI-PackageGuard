@@ -1,34 +1,14 @@
-# Custom Action Recognition Model (CNN + LSTM)
+###use python version 3.12 for both runnung the fine-tuned yolo model and creating the cnn + lstm architecture
 
-This repository contains the code for building a custom action recognition model using CNN-LSTM.
+###To activatge the GPU
 
-## Getting Started
+we ahve NVIDIA 
+    CUDA version is 12.5 in C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA path
+    cuDNN version is 8.9.7 in "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\include\cudnn_version.h"
+For these systems, wwe need to use Tensorflow 2.14 and
+    Recommended Python Versions for TensorFlow 2.14.0:
+    3.8
+    3.9
+    3.10
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/custom-action-recognition.git
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Training the Model
-1. Extract frames from videos:
-   ```bash
-   python scripts/extract_frames.py
-   ```
-2. Preprocess the frames:
-   ```bash
-   python scripts/preprocess_data.py
-   ```
-3. Train the model:
-   ```bash
-   python scripts/train.py
-   ```
-
-### Prediction
-To predict actions on a new video:
-```bash
-python scripts/predict.py --video_path="data/raw_videos/test_video.mp4"
+finally after several testing, we are going to use 'conda_venv_for_GPU' environment rather normal python environment, because of for us conda virtual environment supports tensorflow to run the training process on CUDA+cuDNN
